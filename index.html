@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Privacy Policy for Carlos — a local-only car cost and mileage tracker."
+    />
+    <title>Carlos — Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #f4f6fa;
+        --card: #ffffff;
+        --text: #0b1220;
+        --muted: #5b6475;
+        --line: #e6eaf2;
+        --accent: #3d6bf0;
+        --hero: #010b21;
+        --hero-text: #f5f7fb;
+        --hero-muted: rgba(245, 247, 251, 0.72);
+        --radius: 16px;
+        --max: 42rem;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+        font-size: 16px;
+      }
+
+      .hero {
+        background: linear-gradient(160deg, #010b21 0%, #0a1a3a 55%, #132a52 100%);
+        color: var(--hero-text);
+        padding: 2.5rem 1.25rem 2rem;
+      }
+
+      .hero-inner,
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1.75rem;
+      }
+
+      .brand-name {
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        font-size: 1.125rem;
+      }
+
+      .lang {
+        display: inline-flex;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        padding: 3px;
+        gap: 2px;
+      }
+
+      .lang button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: var(--hero-muted);
+        font: inherit;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        padding: 0.4rem 0.75rem;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+
+      .lang button[aria-pressed="true"] {
+        background: #fff;
+        color: var(--hero);
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+        font-weight: 800;
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--hero-muted);
+        max-width: 34rem;
+      }
+
+      .meta {
+        margin-top: 1.25rem;
+        font-size: 0.875rem;
+        color: var(--hero-muted);
+      }
+
+      .wrap {
+        padding: 1.5rem 1.25rem 3.5rem;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1.25rem 1.25rem 0.25rem;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+      }
+
+      h2 {
+        margin: 1.5rem 0 0.5rem;
+        font-size: 1.05rem;
+        letter-spacing: -0.02em;
+      }
+
+      .card > section:first-of-type h2 {
+        margin-top: 0.25rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        margin: 0 0 1rem;
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin-bottom: 0.4rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+
+      .note {
+        background: #eef3ff;
+        border: 1px solid #d7e2ff;
+        color: #243b73;
+        border-radius: 12px;
+        padding: 0.9rem 1rem;
+        margin: 0 0 1.25rem;
+        font-size: 0.9375rem;
+      }
+
+      .note strong {
+        color: #15264f;
+      }
+
+      footer {
+        margin-top: 1.25rem;
+        font-size: 0.8125rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="brand">
+          <div class="brand-name">Carlos</div>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" id="btn-en" aria-pressed="true" data-lang="en">
+              English
+            </button>
+            <button type="button" id="btn-de" aria-pressed="false" data-lang="de">
+              Deutsch
+            </button>
+          </div>
+        </div>
+
+        <div data-i18n="en">
+          <h1>Privacy Policy</h1>
+          <p class="lead">
+            Carlos is a local-only car cost and mileage tracker. Your data stays on
+            your device. We do not run an account system or analytics backend for
+            this app.
+          </p>
+          <p class="meta">Effective date: 2 August 2026 · App: Carlos (iOS)</p>
+        </div>
+
+        <div data-i18n="de" hidden>
+          <h1>Datenschutzerklärung</h1>
+          <p class="lead">
+            Carlos ist ein rein lokaler Tracker für Autokosten und Kilometerstände.
+            Deine Daten bleiben auf dem Gerät. Es gibt keinen Account und kein
+            Analytics-Backend für diese App.
+          </p>
+          <p class="meta">Gültig ab: 2. August 2026 · App: Carlos (iOS)</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="card">
+        <!-- English -->
+        <div data-i18n="en">
+          <p class="note">
+            <strong>Short version:</strong> Carlos stores vehicle, expense and
+            odometer data only on your iPhone. We do not collect it on our servers,
+            do not require sign-in, and do not use advertising or tracking SDKs.
+          </p>
+
+          <section>
+            <h2>1. Who we are</h2>
+            <p>
+              This Privacy Policy describes how the mobile app <strong>Carlos</strong>
+              (“the App”) handles information.
+            </p>
+            <p>
+              Operator / contact for privacy questions:
+              <!-- Replace with your real contact before publishing -->
+              <a href="mailto:carlos-car-app@proton.me"
+                >carlos-car-app@proton.me</a
+              >.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. What data the App stores</h2>
+            <p>
+              If you use Carlos, the App may store the following on your device
+              (using on-device storage such as Apple’s local app storage / AsyncStorage):
+            </p>
+            <ul>
+              <li>
+                <strong>Vehicle details</strong> you enter (for example name, brand,
+                model, first registration year, purchase date, purchase price,
+                odometer at purchase)
+              </li>
+              <li>
+                <strong>Expenses</strong> you log (date, category, amount, optional
+                description)
+              </li>
+              <li>
+                <strong>Odometer readings</strong> you log (date, kilometre value)
+              </li>
+              <li>
+                <strong>App preferences</strong> such as theme, language, header image
+                choice, and simple onboarding state
+              </li>
+            </ul>
+            <p>
+              You decide what to enter. Only a vehicle name is required to set up a
+              car; other vehicle fields are optional.
+            </p>
+          </section>
+
+          <section>
+            <h2>3. Where the data is processed</h2>
+            <p>
+              Processing happens <strong>on your device</strong>. The App is designed
+              as a local-only product: there is no Carlos cloud account, no Carlos
+              backend that receives your vehicle or expense data, and no automatic
+              sync to our servers.
+            </p>
+            <p>
+              Your device platform (Apple) may create system backups (for example
+              iCloud Backup) according to your device settings. Those backups are
+              controlled by you and Apple, not by a Carlos online service.
+            </p>
+          </section>
+
+          <section>
+            <h2>4. What we do not collect</h2>
+            <p>With the current version of Carlos we do <strong>not</strong>:</p>
+            <ul>
+              <li>create user accounts or require login</li>
+              <li>upload your expenses, readings or vehicle data to our servers</li>
+              <li>use advertising networks</li>
+              <li>use third-party analytics or crash-reporting SDKs</li>
+              <li>track you across other apps or websites</li>
+              <li>sell personal data</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>5. Demo data</h2>
+            <p>
+              Carlos may offer optional sample (“demo”) data so you can explore the
+              App. Demo data is loaded only when you choose that option. It stays on
+              your device like any other data you enter and can be removed with
+              “Delete all data” in Settings.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. How you can delete data</h2>
+            <p>You can remove App data at any time by:</p>
+            <ul>
+              <li>
+                using <strong>Settings → Delete all data</strong> inside Carlos, or
+              </li>
+              <li>deleting the App from your device</li>
+            </ul>
+            <p>
+              Because data is stored locally, deleting it on the device (or
+              uninstalling the App) removes it from that installation. If your device
+              made a system backup that still contains App data, that backup follows
+              your device/backup settings.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Permissions</h2>
+            <p>
+              Carlos is built to work without access to your contacts, photos,
+              location, microphone or camera. If a future version requests a system
+              permission, the iOS permission dialog will explain the purpose at that
+              time, and this policy will be updated.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Children</h2>
+            <p>
+              Carlos is a general-purpose utility and is not directed at children.
+              We do not knowingly collect personal data from children through a
+              Carlos online service, because the App does not operate such a service
+              for your logged data.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Changes to this policy</h2>
+            <p>
+              We may update this Privacy Policy if the App’s behaviour changes (for
+              example if optional cloud features, export sharing or diagnostics are
+              added later). The “Effective date” at the top will be revised when that
+              happens. Continued use of the App after an update means you should
+              review the new policy.
+            </p>
+          </section>
+
+          <section>
+            <h2>10. Contact</h2>
+            <p>
+              Questions about privacy or this policy:
+              <a href="mailto:carlos-car-app@proton.me"
+                >carlos-car-app@proton.me</a
+              >.
+            </p>
+          </section>
+        </div>
+
+        <!-- German -->
+        <div data-i18n="de" hidden>
+          <p class="note">
+            <strong>Kurzfassung:</strong> Carlos speichert Fahrzeug-, Ausgaben- und
+            Tachodaten nur auf deinem iPhone. Wir holen sie nicht auf unsere Server,
+            es gibt keinen Login und keine Werbe- oder Tracking-SDKs.
+          </p>
+
+          <section>
+            <h2>1. Verantwortliche Stelle</h2>
+            <p>
+              Diese Datenschutzerklärung beschreibt, wie die Mobile-App
+              <strong>Carlos</strong> („die App“) mit Informationen umgeht.
+            </p>
+            <p>
+              Kontakt für Datenschutzfragen:
+              <!-- Vor der Veröffentlichung durch echte Adresse ersetzen -->
+              <a href="mailto:carlos-car-app@proton.me"
+                >carlos-car-app@proton.me</a
+              >.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. Welche Daten die App speichert</h2>
+            <p>
+              Wenn du Carlos nutzt, kann die App Folgendes <strong>auf deinem
+              Gerät</strong> speichern (lokaler App-Speicher / AsyncStorage):
+            </p>
+            <ul>
+              <li>
+                <strong>Fahrzeugdaten</strong>, die du eingibst (z. B. Name, Marke,
+                Modell, Erstzulassungsjahr, Kaufdatum, Kaufpreis, Tachostand beim
+                Kauf)
+              </li>
+              <li>
+                <strong>Ausgaben</strong>, die du erfasst (Datum, Kategorie, Betrag,
+                optionale Beschreibung)
+              </li>
+              <li>
+                <strong>Kilometerstände</strong>, die du erfasst (Datum, km-Wert)
+              </li>
+              <li>
+                <strong>App-Einstellungen</strong> wie Design, Sprache,
+                Header-Bildauswahl und einfacher Onboarding-Status
+              </li>
+            </ul>
+            <p>
+              Du entscheidest, was du einträgst. Zum Anlegen eines Fahrzeugs ist nur
+              der Name Pflicht; die übrigen Fahrzeugfelder sind optional.
+            </p>
+          </section>
+
+          <section>
+            <h2>3. Wo die Daten verarbeitet werden</h2>
+            <p>
+              Die Verarbeitung findet <strong>auf deinem Gerät</strong> statt. Carlos
+              ist als reine Offline-/Lokal-App gebaut: Es gibt keinen Carlos-Cloud-
+              Account und kein Carlos-Backend, das deine Fahrzeug- oder Ausgabendaten
+              empfängt, und keine automatische Synchronisation zu unseren Servern.
+            </p>
+            <p>
+              Dein Gerät bzw. Apple kann je nach deinen Systemeinstellungen
+              Sicherungen anlegen (z. B. iCloud-Backup). Solche Backups steuerst du
+              und Apple — nicht ein Carlos-Online-Dienst.
+            </p>
+          </section>
+
+          <section>
+            <h2>4. Was wir nicht erheben</h2>
+            <p>In der aktuellen Version von Carlos tun wir <strong>nicht</strong>:</p>
+            <ul>
+              <li>Benutzerkonten anlegen oder Login verlangen</li>
+              <li>
+                deine Ausgaben, Kilometerstände oder Fahrzeugdaten auf unsere Server
+                hochladen
+              </li>
+              <li>Werbenetzwerke einbinden</li>
+              <li>Drittanbieter-Analytics- oder Crash-Reporting-SDKs nutzen</li>
+              <li>dich über andere Apps oder Websites hinweg tracken</li>
+              <li>personenbezogene Daten verkaufen</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>5. Demodaten</h2>
+            <p>
+              Carlos kann optionale Beispieldaten („Demo“) anbieten, damit du die App
+              ausprobieren kannst. Demodaten werden nur geladen, wenn du das
+              ausdrücklich wählst. Sie bleiben wie alle anderen Daten auf dem Gerät und
+              lassen sich unter Einstellungen mit „Alle Daten löschen“ entfernen.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Daten löschen</h2>
+            <p>Du kannst App-Daten jederzeit entfernen durch:</p>
+            <ul>
+              <li>
+                <strong>Einstellungen → Alle Daten löschen</strong> in Carlos, oder
+              </li>
+              <li>Löschen der App vom Gerät</li>
+            </ul>
+            <p>
+              Weil die Daten lokal liegen, entfernt das Löschen in der App bzw. die
+              Deinstallation die Daten dieser Installation. Enthält ein
+              System-Backup weiterhin App-Daten, richtet sich das nach deinen
+              Geräte-/Backup-Einstellungen.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Berechtigungen</h2>
+            <p>
+              Carlos ist so gebaut, dass es ohne Zugriff auf Kontakte, Fotos,
+              Standort, Mikrofon oder Kamera auskommt. Falls eine spätere Version eine
+              Systemberechtigung anfragt, erklärt der iOS-Dialog den Zweck, und diese
+              Erklärung wird aktualisiert.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Kinder</h2>
+            <p>
+              Carlos ist eine allgemeine Utility-App und richtet sich nicht
+              speziell an Kinder. Wir erheben wissentlich keine personenbezogenen Daten
+              von Kindern über einen Carlos-Online-Dienst — die App betreibt für deine
+              erfassten Daten keinen solchen Dienst.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Änderungen</h2>
+            <p>
+              Wir können diese Datenschutzerklärung anpassen, wenn sich das Verhalten
+              der App ändert (z. B. optionale Cloud-Funktionen, Export/Teilen oder
+              Diagnostik). Das Gültigkeitsdatum oben wird dann aktualisiert. Bei
+              weiterer Nutzung solltest du die neue Fassung lesen.
+            </p>
+          </section>
+
+          <section>
+            <h2>10. Kontakt</h2>
+            <p>
+              Fragen zu Datenschutz oder dieser Erklärung:
+              <a href="mailto:carlos-car-app@proton.me"
+                >carlos-car-app@proton.me</a
+              >.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <footer>
+        <span data-i18n="en"
+          >Carlos · local-only car cost tracker ·
+          <a href="https://github.com/alebree/carlos-privacy">Source</a></span
+        >
+        <span data-i18n="de" hidden
+          >Carlos · lokaler Autokosten-Tracker ·
+          <a href="https://github.com/alebree/carlos-privacy">Quelle</a></span
+        >
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var storageKey = "carlos-privacy-lang";
+        var buttons = document.querySelectorAll(".lang button");
+        var nodes = document.querySelectorAll("[data-i18n]");
+
+        function detect() {
+          try {
+            var saved = localStorage.getItem(storageKey);
+            if (saved === "en" || saved === "de") return saved;
+          } catch (e) {}
+          var nav = (navigator.language || "en").toLowerCase();
+          return nav.indexOf("de") === 0 ? "de" : "en";
+        }
+
+        function setLang(lang) {
+          nodes.forEach(function (el) {
+            el.hidden = el.getAttribute("data-i18n") !== lang;
+          });
+          buttons.forEach(function (btn) {
+            btn.setAttribute(
+              "aria-pressed",
+              btn.getAttribute("data-lang") === lang ? "true" : "false"
+            );
+          });
+          document.documentElement.lang = lang;
+          try {
+            localStorage.setItem(storageKey, lang);
+          } catch (e) {}
+        }
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            setLang(btn.getAttribute("data-lang"));
+          });
+        });
+
+        setLang(detect());
+      })();
+    </script>
+  </body>
+</html>
